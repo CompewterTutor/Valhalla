@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# NOKIA5110_CONN-baldrControlBoard-eagle-import
+#
+DEF NOKIA5110_CONN-baldrControlBoard-eagle-import J 0 40 Y Y 1 F N
+F0 "J" 0 0 50 H V C CNN
+F1 "NOKIA5110_CONN-baldrControlBoard-eagle-import" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 -50 200 -1400 0 1 0 N
+X VCC 1 -350 -150 100 R 50 50 1 1 W
+X GND 2 -350 -300 100 R 50 50 1 1 I
+X SCE 3 -350 -450 100 R 50 50 1 1 I
+X RST 4 -350 -600 100 R 50 50 1 1 I
+X D/C 5 -350 -750 100 R 50 50 1 1 I
+X DN(MOSI) 6 -350 -900 100 R 50 50 1 1 I
+X LED LED -350 -1200 100 R 50 50 1 1 I
+X SCLK SCLK -350 -1050 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

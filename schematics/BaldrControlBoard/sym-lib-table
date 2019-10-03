@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name baldrControlBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/baldrControlBoard-rescue.lib)(options "")(descr ""))
+)

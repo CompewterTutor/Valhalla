@@ -1,0 +1,305 @@
+EESchema Schematic File Version 4
+LIBS:baldrControlBoard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7400 7500 0    50   ~ 10
+BALDR-ESP
+Text Notes 8150 7650 0    50   ~ 10
+09/25/19
+$Comp
+L SparkFun-PowerSymbols:5V #SUPPLY?
+U 1 1 5D8BAACC
+P 1600 1050
+F 0 "#SUPPLY?" H 1650 1050 45  0001 L BNN
+F 1 "5V" H 1600 1000 45  0000 C CNN
+F 2 "XXX-00000" H 1600 650 60  0000 C CNN
+F 3 "" H 1600 1050 60  0001 C CNN
+	1    1600 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Module:Adafruit_HUZZAH_ESP8266_breakout A?
+U 1 1 5D8BC47A
+P 1550 4550
+F 0 "A?" H 550 4100 50  0000 C CNN
+F 1 "Adafruit_HUZZAH_ESP8266_breakout" H 400 4000 50  0000 C CNN
+F 2 "" H 1750 5150 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/2471" H 1850 5250 50  0001 C CNN
+	1    1550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-IC-Logic:74HC595N U?
+U 1 1 5D8BF33E
+P 1650 6800
+F 0 "U?" H 1650 7504 45  0000 C CNN
+F 1 "74HC595N" H 1650 7420 45  0000 C CNN
+F 2 "DIP16" H 1650 7450 20  0001 C CNN
+F 3 "" H 1650 6800 50  0001 C CNN
+F 4 "" H 1550 6850 60  0001 C CNN "Field4"
+	1    1650 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_102MM J?
+U 1 1 5D8C1624
+P 7000 4600
+F 0 "J?" H 6958 5810 45  0000 C CNN
+F 1 "CONN_102MM" H 6958 5726 45  0000 C CNN
+F 2 "1X10-2MM" H 7000 5700 20  0001 C CNN
+F 3 "" H 7000 4600 50  0001 C CNN
+F 4 "CONN-08875" H 6958 5631 60  0000 C CNN "Field4"
+	1    7000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_102MM J?
+U 1 1 5D8C9E58
+P 6250 3700
+F 0 "J?" H 6022 4055 45  0000 R CNN
+F 1 "CONN_102MM" H 6022 4139 45  0000 R CNN
+F 2 "1X10-2MM" H 6250 4800 20  0001 C CNN
+F 3 "" H 6250 3700 50  0001 C CNN
+F 4 "CONN-08875" H 6022 4234 60  0000 R CNN "Field4"
+	1    6250 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5D8DFC95
+P 1700 1400
+F 0 "C1" V 1800 1050 50  0000 L CNN
+F 1 "1000uF" V 1700 950 50  0000 L CNN
+F 2 "" H 1700 1400 50  0001 C CNN
+F 3 "~" H 1700 1400 50  0001 C CNN
+	1    1700 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8E4EEA
+P 1800 1050
+F 0 "#PWR?" H 1800 800 50  0001 C CNN
+F 1 "GND" H 1800 1100 50  0000 C CNN
+F 2 "" H 1800 1050 50  0001 C CNN
+F 3 "" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:TXB0108DQSR U?
+U 1 1 5D8B93E6
+P 1500 2450
+F 0 "U?" H 1500 1661 50  0000 C CNN
+F 1 "TXB0108DQSR" H 1500 1570 50  0000 C CNN
+F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 1500 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 1500 2350 50  0001 C CNN
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1050 1600 1400
+Wire Wire Line
+	1800 1050 1800 1400
+Wire Wire Line
+	1600 1400 1600 1750
+Connection ~ 1600 1400
+Wire Wire Line
+	1800 1400 1800 1550
+Wire Wire Line
+	1800 1550 2400 1550
+Connection ~ 1800 1400
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 5D8E4B8A
+P 4300 2500
+F 0 "J?" H 4192 1775 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 4192 1866 50  0000 C CNN
+F 2 "" H 4300 2500 50  0001 C CNN
+F 3 "~" H 4300 2500 50  0001 C CNN
+	1    4300 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 2000 2700 2000
+Wire Wire Line
+	2950 2100 2700 2100
+Wire Wire Line
+	2950 2200 2700 2200
+Wire Wire Line
+	2950 2300 2700 2300
+Wire Wire Line
+	2950 2400 2700 2400
+Wire Wire Line
+	2950 2500 2700 2500
+Wire Wire Line
+	2950 2600 2700 2600
+Wire Wire Line
+	2950 2700 2700 2700
+Wire Wire Line
+	2950 2800 2700 2800
+Wire Wire Line
+	2950 2900 2700 2900
+Text Label 2800 2000 0    50   ~ 0
+0E
+Wire Wire Line
+	1400 1750 950  1750
+Wire Wire Line
+	950  1750 950  3400
+Wire Wire Line
+	950  3400 1750 3400
+Wire Wire Line
+	1750 3400 1750 3750
+$Comp
+L SparkFun-Displays:LCD-16X2SILK LCD?
+U 1 1 5D92932B
+P 6900 1050
+F 0 "LCD?" V 6887 222 45  0000 R CNN
+F 1 "LCD-16X2SILK" V 6803 222 45  0000 R CNN
+F 2 "LCD-16X2" H 6900 2100 20  0001 C CNN
+F 3 "" H 6900 1050 50  0001 C CNN
+F 4 "LCD-00255" V 6708 222 60  0000 R CNN "Field4"
+	1    6900 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female J1
+U 1 1 5D8E2C82
+P 3150 2400
+F 0 "J1" H 3178 2376 50  0000 L CNN
+F 1 "BiDirLogicLevelConn_01x10_Female_1" V 3000 3250 50  0000 L CNN
+F 2 "" H 3150 2400 50  0001 C CNN
+F 3 "~" H 3150 2400 50  0001 C CNN
+	1    3150 2400
+	1    0    0    -1  
+$EndComp
+Text Label 2850 2100 0    50   ~ 0
+A1
+$Comp
+L baldrControlBoard-rescue:NOKIA5110_CONN-baldrControlBoard-eagle-import J?
+U 1 1 5D933B88
+P 3900 5100
+F 0 "J?" H 4128 4421 50  0000 L CNN
+F 1 "NOKIA5110_CONN" H 4128 4330 50  0000 L CNN
+F 2 "" H 3900 5100 50  0001 C CNN
+F 3 "" H 3900 5100 50  0001 C CNN
+	1    3900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4650 150  4650
+Text Label 150  4650 0    50   ~ 0
+LED_STRIP_DATA
+Wire Wire Line
+	3550 5250 3550 3400
+Wire Wire Line
+	3550 3400 2900 3400
+Connection ~ 1750 3400
+Wire Wire Line
+	3550 5550 2450 5550
+Wire Wire Line
+	3550 5700 2450 5700
+Wire Wire Line
+	3550 5850 2450 5850
+Wire Wire Line
+	3550 6000 2450 6000
+Wire Wire Line
+	3550 6150 2450 6150
+Wire Wire Line
+	3550 6300 2900 6300
+Wire Wire Line
+	3550 5400 3250 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5D95E6DF
+P 3250 5400
+F 0 "#PWR?" H 3250 5150 50  0001 C CNN
+F 1 "GND" V 3255 5272 50  0000 R CNN
+F 2 "" H 3250 5400 50  0001 C CNN
+F 3 "" H 3250 5400 50  0001 C CNN
+	1    3250 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9600C8
+P 1500 3150
+F 0 "#PWR?" H 1500 2900 50  0001 C CNN
+F 1 "GND" H 1505 2977 50  0000 C CNN
+F 2 "" H 1500 3150 50  0001 C CNN
+F 3 "" H 1500 3150 50  0001 C CNN
+	1    1500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D96152D
+P 1450 5350
+F 0 "#PWR?" H 1450 5100 50  0001 C CNN
+F 1 "GND" H 1455 5177 50  0000 C CNN
+F 2 "" H 1450 5350 50  0001 C CNN
+F 3 "" H 1450 5350 50  0001 C CNN
+	1    1450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9615CB
+P 1650 5650
+F 0 "#PWR?" H 1650 5400 50  0001 C CNN
+F 1 "GND" H 1655 5477 50  0000 C CNN
+F 2 "" H 1650 5650 50  0001 C CNN
+F 3 "" H 1650 5650 50  0001 C CNN
+	1    1650 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5350 1650 5650
+Wire Wire Line
+	2150 4650 3000 4650
+Text Label 3000 4650 0    50   ~ 0
+MOSI
+Text Label 2450 6000 0    50   ~ 0
+MOSI
+Text Label 2450 6150 0    50   ~ 0
+SCLK
+Wire Wire Line
+	2150 4750 3000 4750
+Text Label 3000 4750 0    50   ~ 0
+SCLK
+Wire Wire Line
+	2900 6300 2900 3400
+Connection ~ 2900 3400
+Wire Wire Line
+	2900 3400 1750 3400
+Wire Wire Line
+	2150 4350 2400 4350
+Wire Wire Line
+	2150 4450 2400 4450
+Wire Wire Line
+	2150 4550 2400 4550
+Text Label 2400 4550 0    50   ~ 0
+DC
+Text Label 2400 4450 0    50   ~ 0
+RST
+Text Label 2400 4350 0    50   ~ 0
+SCE
+Text Label 2450 5550 0    50   ~ 0
+SCE
+Text Label 2450 5700 0    50   ~ 0
+RST
+Text Label 2450 5850 0    50   ~ 0
+DC
+$EndSCHEMATC
